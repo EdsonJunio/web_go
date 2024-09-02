@@ -10,12 +10,13 @@
           crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-    <title>Eymard loja</title>
+    <title>Alura loja</title>
 </head>
-<body>
 <nav class="navbar navbar-light bg-light mb-4">
-    <a class="navbar-brand" href="/">Eymard loja</a>
+    <a class="navbar-brand" href="/">Alura Loja</a>
 </nav>
+
+<body>
 <div class="container">
     <section class="card">
         <div>
@@ -29,7 +30,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                    {{range .}}
+                {{range .}}
                 <tr>
                     <td>{{.Nome}}</td>
                     <td>{{.Descricao}}</td>
@@ -41,7 +42,9 @@
             </table>
         </div>
     </section>
-
+    <div class="card-footer">
+        <a href="/new" class="btn btn-primary mb-2">Criar novo produto</a>
+    </div>
 </div>
 </body>
 
